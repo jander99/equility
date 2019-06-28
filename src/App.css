@@ -1,0 +1,96 @@
+@font-face {
+  font-family: maidragon;
+  src: url(Claphappy.ttf);
+}
+
+input {
+  display: block;
+  width: 150px;
+  height: 40px;
+}
+
+body {
+  font-size: 25px;
+  background-color: mediumaquamarine;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+  margin-top: 5px;
+  margin-bottom: 80px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  font-size: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 80px;
+  color: mintcream;
+}
+
+.inputs {
+  display: inline-block;
+}
+
+.App {
+  text-align: center;
+  font-family: maidragon;
+  color: whitesmoke;
+}
+
+.inputs {
+  text-align: center;
+}
+
+label {
+  text-align: center;
+  width: 180px;
+  font-size: 32px;
+}
+
+input {
+  text-align: center;
+  color: whitesmoke;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  width: 180px;
+  font-size:24px;
+  font-family: maidragon;   
+  background-color: transparent; 
+  border-width: 0 0 2px;
+  border-color: white;
+  border-radius: 2.50px;
+}
+
+input:focus {
+  border-color: white;
+}
+
+input {
+  outline:none;
+ }
+
+/* unvisited link */
+a:link {
+  color: lightcyan;
+}
+
+/* visited link */
+a:visited {
+  color: lightcyan;
+}
+
+/* mouse over link */
+a:hover {
+  color: lightcyan;
+}
+
+/* selected link */
+a:active {
+  color: lightcyan;
+}
