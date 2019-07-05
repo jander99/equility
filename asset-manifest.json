@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/equility/static/css/main.3a5cbaa3.chunk.css",
+    "main.js": "/equility/static/js/main.21036cfe.chunk.js",
+    "main.js.map": "/equility/static/js/main.21036cfe.chunk.js.map",
+    "runtime~main.js": "/equility/static/js/runtime~main.adc71e4d.js",
+    "runtime~main.js.map": "/equility/static/js/runtime~main.adc71e4d.js.map",
+    "static/js/2.b11c728f.chunk.js": "/equility/static/js/2.b11c728f.chunk.js",
+    "static/js/2.b11c728f.chunk.js.map": "/equility/static/js/2.b11c728f.chunk.js.map",
+    "index.html": "/equility/index.html",
+    "precache-manifest.d8fad60884b7f787f634035cbf1d242e.js": "/equility/precache-manifest.d8fad60884b7f787f634035cbf1d242e.js",
+    "service-worker.js": "/equility/service-worker.js",
+    "static/css/main.3a5cbaa3.chunk.css.map": "/equility/static/css/main.3a5cbaa3.chunk.css.map",
+    "static/media/App.css": "/equility/static/media/Claphappy.2dd6448b.ttf"
+  }
+}
