@@ -3290,9 +3290,15 @@ doctrine@^3.0.0:
     esutils "^2.0.2"
 
 dom-align@^1.7.0:
+<<<<<<< HEAD
   version "1.9.0"
   resolved "https://npm.artifactory.homedepot.com/artifactory/api/npm/npm/dom-align/-/dom-align-1.9.0.tgz#27339be5a2301e7d8470bdee54575c835c981654"
   integrity sha1-JzOb5aIwHn2EcL3uVFdcg1yYFlQ=
+=======
+  version "1.8.3"
+  resolved "https://npm.artifactory.homedepot.com/artifactory/api/npm/npm/dom-align/-/dom-align-1.8.3.tgz#f1fc197228109eca24f04cc6ad3b06f6eb8a54bb"
+  integrity sha1-8fwZcigQnsok8EzGrTsG9uuKVLs=
+>>>>>>> 07b1815a26bf87b33afc1990e6b1dda8e73f8659
 
 dom-converter@^0.2:
   version "0.2.0"

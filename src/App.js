@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import { Form, Text } from "informed";
 import "./App.css";
+import Slider, { Range } from 'rc-slider';
+
+import 'rc-slider/assets/index.css';
 
 class App extends Component {
   state = {};
 
   toPercent(num, den) {
-    return Math.floor(num / den * 100) || '?';
+    return Math.floor(num / den * 100) || '0';
   }
 
   render() {
@@ -15,11 +18,13 @@ class App extends Component {
     let money = this.state.money;
     let total = us + intl + money;
 
-    let targetUs = 0.6;
-    let targetIntl = 0.4;
+    let targetUs = this.state.targetUs / 100.0;
+    let targetIntl = 1 - targetUs;
 
-    let addUs = 0.2 * (3 * intl + 3 * money - 2 * us);
-    let addIntl = 0.2 * (2 * (money + us) - 3 * intl);
+    let addUs = targetUs * (intl + us + money) - us
+    let addIntl = money - addUs
+    // let addUs = 0.2 * (3 * intl + 3 * money - 2 * us);
+    // let addIntl = 0.2 * (2 * (money + us) - 3 * intl);
 
     if (addUs < 0) {
       addIntl = money;
@@ -40,9 +45,11 @@ class App extends Component {
         <Form
           onChange={formState =>
             this.setState({
-              money: parseFloat(formState.values.allocatee) || 0,
-              us: parseFloat(formState.values.us) || 0,
-              intl: parseFloat(formState.values.intl) || 0
+              money: Math.abs(parseFloat(formState.values.allocatee)) || 0,
+              us: Math.abs(parseFloat(formState.values.us)) || 0,
+              intl: Math.abs(parseFloat(formState.values.intl)) || 0,
+              targetUs: localStorage.getItem('targetUs') || 60,
+              targetIntl: (100 - localStorage.getItem('targetUs')) || 40
             })
           }
         >
@@ -61,6 +68,15 @@ class App extends Component {
         </Form>
         {usText}
         {intlText}
+        <h4>US {this.state.targetUs}% / {100 - this.state.targetUs}% INT'L </h4>
+        <Slider
+          defaultValue={localStorage.getItem('targetUs') || 60}
+          min={0} max={100}
+          step={5}
+          onChange={value => {
+            this.setState({ targetUs: value })
+            localStorage.setItem('targetUs', value)
+          }} />
         <h3>
           Investing in securities involves risks, and there is always the
           potential of losing money when you invest in securities. Before
