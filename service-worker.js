@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/equility/precache-manifest.d8fad60884b7f787f634035cbf1d242e.js"
+  "/equility/precache-manifest.b267ae82851e057a1aa86ade1d6bdcc9.js"
 );
 
 self.addEventListener('message', (event) => {
