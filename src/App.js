@@ -21,8 +21,8 @@ class App extends Component {
     let targetUs = this.state.targetUs / 100.0;
     let targetIntl = 1 - targetUs;
 
-    let addUs = targetUs * (intl + us + money) - us
-    let addIntl = money - addUs
+    let addUs = targetUs * (intl + us + money) - us;
+    let addIntl = money - addUs;
     // let addUs = 0.2 * (3 * intl + 3 * money - 2 * us);
     // let addIntl = 0.2 * (2 * (money + us) - 3 * intl);
 
